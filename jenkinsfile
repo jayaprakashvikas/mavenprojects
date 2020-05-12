@@ -1,7 +1,7 @@
 pipeline
 {
 environment {
-    registry = "jayaprakashvikas/project1"
+    registry = "vikasviku/project1"
     registryCredential = 'dockerhub'
 	def dockerImage = ''
 }
