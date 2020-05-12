@@ -12,10 +12,12 @@ stage('Cloning Git') {
     git 'https://github.com/jayaprakashvikas/mavenprojects.git'
   }
 }
+
 stage('Building image') {
       steps{
         script {
-          
+		
+          mvn clean package
 		  dockerImage = docker.build registry + ":$BUILD_NUMBER"
         }
       }
