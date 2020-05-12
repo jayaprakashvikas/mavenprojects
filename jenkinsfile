@@ -19,7 +19,7 @@ tools {
                 '''
             }
         }
-stages {
+
 stage('Cloning Git') {
   steps {
     git 'https://github.com/jayaprakashvikas/mavenprojects.git'
